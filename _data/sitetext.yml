@@ -1,0 +1,59 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: Hello!
+    text: This is a blurp about me.
+
+  about:
+    title: "About"
+    text: ""
+    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    section: about
+
+  publications:
+    title: "Publications"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    section: publications
+    closebutton: "Close"
+
+  footer:
+    kofi:
+      image: assets/img/kofi_button_black.png
+      url: "https://www.ko-fi.com"
+
+    newsletter:
+      text: "Stay in the loop with my newsletter"   
+      email-placeholder: "Enter your email ..."
+      email-validation: "Please enter your email address."
+      subject: "Melissa Than's Newsletter Sign-up"
+      submit: "Subscribe"
+
+    social:
+      - url: https://twitter.com
+        icon: "fab fa-twitter"
+      - url: https://facebook.com
+        icon: "fab fa-facebook-f"
+      - url: https://linkedin.com
+        icon: "fab fa-linkedin-in"
+      - url: https://instagram.com
+        icon: "fab fa-instagram"
+
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
